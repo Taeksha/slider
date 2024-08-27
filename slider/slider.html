@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+        }
+        .slider {
+            overflow: hidden;
+            position: absolute;
+            width: 80%;
+            padding: 0px;
+            margin: 5% 10%;
+            height: 800px;
+        }
+
+        .main-slides {
+            display: flex;
+            list-style: none;
+
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .prev,
+        .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <ul class="main-slides">
+            <li class="slide"><img
+                    src="https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww">
+            </li>
+            <li class="slide"><img
+                    src="https://wallpapers.com/images/featured/calming-desktop-background-nsup0okwyoqg4db9.jpg" width="100%"></li>
+            <li class="slide"><img
+                    src="https://images.unsplash.com/photo-1535320404287-416e2c6d2b41?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D">
+            </li>
+        </ul>
+        <div class="slider-controls">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>.
+   <script src="script.js"></script>
+</body>
+
+</html>
